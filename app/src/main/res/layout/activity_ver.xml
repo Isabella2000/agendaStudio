@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context=".NuevoActivity">
+    tools:context=".VerActivity">
+
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:text="@string/yourName"
-        android:textSize="24sp"
+        android:text="@string/tituloEditar"
+        android:textSize="30sp"
+        android:layout_gravity="center"
         android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/yourName"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
 
     <EditText
 
@@ -56,7 +70,7 @@
         android:paddingLeft="16dp"
         android:ems="10"
         android:hint="@string/h_telefono"
-        android:inputType="text"
+        android:inputType="phone"
         android:textSize="20sp"
         android:background="@drawable/edittext_background"/>
 
@@ -83,7 +97,7 @@
         android:paddingLeft="16dp"
         android:ems="10"
         android:hint="@string/h_correo"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textSize="20sp"
         android:background="@drawable/edittext_background"/>
 
@@ -98,5 +112,12 @@
         android:hint="@string/btnGuardar"
         android:textSize="24sp" />
 
-</LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/baseline_edit_24" />
 
+
+</androidx.appcompat.widget.LinearLayoutCompat>

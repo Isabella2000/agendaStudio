@@ -12,7 +12,7 @@ import com.example.agenda.db.DbContactos;
 
 public class NuevoActivity extends AppCompatActivity {
     private Button btnGuarda;
-    private EditText txtNombre, txtApellido, txtCorreoElectronico;
+    private EditText txtNombre, txtTelefono, txtCorreoElectronico;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +20,14 @@ public class NuevoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_nuevo);
 
         txtNombre=findViewById(R.id.txtNombre);
-        txtApellido=findViewById(R.id.txtApellido);
+        txtTelefono=findViewById(R.id.txtTelefono);
         txtCorreoElectronico=findViewById(R.id.txtCorreoElectronico);
         btnGuarda=findViewById(R.id.btnGuarda);
         btnGuarda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 DbContactos dbContactos= new DbContactos(NuevoActivity.this);
-                long id= dbContactos.insertarContacto(txtNombre.getText().toString(),txtApellido.getText().toString(),txtCorreoElectronico.getText().toString());
+                long id= dbContactos.insertarContacto(txtNombre.getText().toString(),txtTelefono.getText().toString(),txtCorreoElectronico.getText().toString());
                 if (id>0){
                     Toast.makeText(NuevoActivity.this, "Registro Agregado", Toast.LENGTH_SHORT).show();
                 }else{
@@ -38,7 +38,7 @@ public class NuevoActivity extends AppCompatActivity {
     }
     private void limpiar(){
         txtNombre.setText("");
-        txtApellido.setText("");
+        txtTelefono.setText("");
         txtCorreoElectronico.setText("");
     }
 }

@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">agenda</string>
     <string name="menu_nuevo">Nuevo Registro</string>
+    <string name="h_nombre">Ingrese su nombre</string>
+    <string name="h_telefono">Ingrese su telefono</string>
+    <string name="h_correo">Ingrese su correo electronico</string>
+    <string name="btnGuardar">Guardar Registro</string>
+    <string name="yourName">Nombre</string>
+    <string name="yourPhone">Telefono</string>
+    <string name="yourCorreo">Correo electronico</string>
+    <string name="tituloEditar">Editar</string>
 </resources>
