@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg1"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -13,7 +14,20 @@
         app:menu="@menu/menu_principal"
         tools:ignore="MissingConstraints"
         android:id="@+id/puntos"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/tituloEntrada"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"  />
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
         android:id="@+id/listaContactos"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

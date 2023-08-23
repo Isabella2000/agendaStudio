@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background"
+    android:background="@drawable/bg3"
     android:orientation="vertical"
     tools:context=".VerActivity">
 
@@ -20,7 +20,8 @@
         android:text="@string/tituloEditar"
         android:textSize="30sp"
         android:layout_gravity="center"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textStyle="bold"  />
 
     <TextView
         android:id="@+id/textView"
@@ -30,8 +31,9 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="16dp"
         android:text="@string/yourName"
+        android:textSize="25sp"
         android:textColor="@color/white"
-        android:textSize="24sp" />
+        android:textStyle="bold"  />
 
     <EditText
 
@@ -56,8 +58,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/yourPhone"
-        android:textSize="24sp"
-        android:textColor="@color/white" />
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
     <EditText
 
@@ -82,8 +85,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/yourCorreo"
-        android:textSize="24sp"
-        android:textColor="@color/white" />
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"  />
 
 
     <EditText
@@ -108,9 +112,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#4D67F6"
+        android:backgroundTint="#f48fb1"
         android:hint="@string/btnGuardar"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabEditar"

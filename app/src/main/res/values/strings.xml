@@ -9,4 +9,5 @@
     <string name="yourPhone">Telefono</string>
     <string name="yourCorreo">Correo electronico</string>
     <string name="tituloEditar">Editar</string>
+    <string name="tituloEntrada">Lista de Contactos</string>
 </resources>

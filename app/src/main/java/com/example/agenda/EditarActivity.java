@@ -55,6 +55,8 @@ public class EditarActivity extends AppCompatActivity {
             if (!txtNombre.getText().toString().equals("") && !txtTelefono.getText().toString().equals("") && !txtCorreoElectronico.getText().toString().equals("")){
                boolean correcto= dbContactos.editarContacto(id,txtNombre.getText().toString(), txtTelefono.getText().toString(), txtCorreoElectronico.getText().toString());
                 if (correcto){
+                    Intent intent =new Intent(EditarActivity.this, MainActivity.class);
+                    startActivity(intent);
                     Toast.makeText(EditarActivity.this, "REGISTRO ACTUALIZADO", Toast.LENGTH_SHORT).show();
                     verRegistro();
                 }else{

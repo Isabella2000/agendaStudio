@@ -2,6 +2,7 @@ package com.example.agenda;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,6 +31,9 @@ public class NuevoActivity extends AppCompatActivity {
                 long id= dbContactos.insertarContacto(txtNombre.getText().toString(),txtTelefono.getText().toString(),txtCorreoElectronico.getText().toString());
                 if (id>0){
                     Toast.makeText(NuevoActivity.this, "Registro Agregado", Toast.LENGTH_SHORT).show();
+                    Intent intent =new Intent(NuevoActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    limpiar();
                 }else{
                     Toast.makeText(NuevoActivity.this, "Error al guardar registro", Toast.LENGTH_SHORT).show();
                 }
