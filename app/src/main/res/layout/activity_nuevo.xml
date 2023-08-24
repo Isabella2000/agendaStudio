@@ -58,7 +58,7 @@
         android:paddingLeft="16dp"
         android:ems="10"
         android:hint="@string/h_telefono"
-        android:inputType="text"
+        android:inputType="phone"
         android:textSize="20sp"
         android:background="@drawable/edittext_background"/>
 
@@ -86,7 +86,7 @@
         android:paddingLeft="16dp"
         android:ems="10"
         android:hint="@string/h_correo"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:textSize="20sp"
         android:background="@drawable/edittext_background"/>
 

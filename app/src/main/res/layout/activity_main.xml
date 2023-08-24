@@ -24,13 +24,14 @@
         android:text="@string/tituloEntrada"
         android:textSize="30sp"
         android:layout_gravity="center"
-        android:textColor="@color/black"
+        android:textColor="#f48fb9"
+        android:layout_marginBottom="20dp"
         android:textStyle="bold"  />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_gravity="center"
         android:id="@+id/listaContactos"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
